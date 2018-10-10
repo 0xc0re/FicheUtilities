@@ -3,7 +3,7 @@ A collection of utilities to make administering Laserfiche easier
 
 Currently the core cli tools supports only the `storage` verb, but over time other functionality will be added.
 
-## CLI
+## LFUtil
 ```
 lfutil [options] [command]
 
