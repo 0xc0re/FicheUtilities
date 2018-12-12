@@ -1,5 +1,5 @@
 ﻿using System;
-using FicheUtilities.DiskStatus.Core;
+using FicheUtilities.Storage.API;
 
 namespace FicheUtilities.DiskStatus.Tests
 {

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FicheUtilities.DiskStatus.Core;
+using FicheUtilities.Storage;
+using FicheUtilities.Storage.API;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 

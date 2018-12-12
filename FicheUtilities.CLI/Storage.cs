@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FicheUtilities.DiskStatus.Core;
+using FicheUtilities.Storage;
 using McMaster.Extensions.CommandLineUtils;
 
 namespace FicheUtilities.CLI
@@ -28,10 +28,21 @@ namespace FicheUtilities.CLI
         [Option("-v|--verbose", Description = "Display full disk statistics.")]
         public bool Verbose { get; set; }
 
+        public ValidationResult OnValidate()
+        {
+            if(WarningThreshold > CriticalThreshold)
+            {
+                return ValidationResult.Success;
+            }
+            else
+            {
+                return new ValidationResult("The Warning Threshold value must be greater than the Critical Threshold value.");
+            }
+        }
+
         public void OnExecute()
         {
-            var factory = new StatusCheckerFactory();
-            var checker = factory.Create();
+            var checker = StatusCheckerFactory.Create();
             var options = new StatusOptions(PathToStorage, WarningThreshold, CriticalThreshold, Verbose);
             var status = checker.GetStatus(options);
 

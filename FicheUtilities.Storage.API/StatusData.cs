@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace FicheUtilities.DiskStatus.Core
+namespace FicheUtilities.Storage.API
 {
     public class StatusData : IStatusData
     {

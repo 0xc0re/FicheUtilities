@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FicheUtilities.DiskStatus.Core
+namespace FicheUtilities.Storage
 {
-    public interface IDirectoryWrapper
+    public interface IStatusCheckerFactory
     {
-        bool Exists(string path);
+        IStatusChecker Create();
     }
 }

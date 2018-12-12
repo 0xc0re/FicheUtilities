@@ -77,9 +77,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FicheUtilities.DiskStatus.Core\FicheUtilities.DiskStatus.Core.csproj">
-      <Project>{8c0a7ace-596d-489c-bd50-1b7d88cbee19}</Project>
-      <Name>FicheUtilities.DiskStatus.Core</Name>
+    <ProjectReference Include="..\FicheUtilities.Storage.API\FicheUtilities.Storage.API.csproj">
+      <Project>{DB081A91-F174-40DE-890C-5BFEE87E20E9}</Project>
+      <Name>FicheUtilities.Storage.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FicheUtilities.Storage\FicheUtilities.Storage.csproj">
+      <Project>{D4908CFA-4CBE-4AAE-A1B3-5EBCFE367888}</Project>
+      <Name>FicheUtilities.Storage</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

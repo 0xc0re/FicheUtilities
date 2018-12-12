@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FicheUtilities.DiskStatus.Core
+namespace FicheUtilities.Storage.API
 {
     public class DiskAPI : IDiskAPI
     {

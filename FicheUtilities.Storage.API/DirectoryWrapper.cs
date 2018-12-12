@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FicheUtilities.DiskStatus.Core
+namespace FicheUtilities.Storage.API
 {
     public class DirectoryWrapper : IDirectoryWrapper
     {

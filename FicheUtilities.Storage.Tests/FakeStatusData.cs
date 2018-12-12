@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FicheUtilities.DiskStatus.Core;
+using FicheUtilities.Storage.API;
 
 namespace FicheUtilities.DiskStatus.Tests
 {

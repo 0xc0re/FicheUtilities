@@ -1,4 +1,4 @@
-﻿namespace FicheUtilities.DiskStatus.Core
+﻿namespace FicheUtilities.Storage.API
 {
     public interface IStatusData
     {

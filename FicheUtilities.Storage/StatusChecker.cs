@@ -1,11 +1,12 @@
-﻿using System;
+﻿using FicheUtilities.Storage.API;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FicheUtilities.DiskStatus.Core
+namespace FicheUtilities.Storage
 {
     public class StatusChecker : IStatusChecker
     {

@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FicheUtilities.DiskStatus.Core
+namespace FicheUtilities.Storage.API
 {
-    public enum MessageType
+    public interface IDirectoryWrapper
     {
-        Info,
-        Ok,
-        Warning,
-        Critical
+        bool Exists(string path);
     }
 }

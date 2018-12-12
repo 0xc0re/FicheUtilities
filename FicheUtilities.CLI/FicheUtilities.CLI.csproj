@@ -66,9 +66,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\FicheUtilities.DiskStatus.Core\FicheUtilities.DiskStatus.Core.csproj">
-      <Project>{8C0A7ACE-596D-489C-BD50-1B7D88CBEE19}</Project>
-      <Name>FicheUtilities.DiskStatus.Core</Name>
+    <ProjectReference Include="..\FicheUtilities.Storage\FicheUtilities.Storage.csproj">
+      <Project>{D4908CFA-4CBE-4AAE-A1B3-5EBCFE367888}</Project>
+      <Name>FicheUtilities.Storage</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

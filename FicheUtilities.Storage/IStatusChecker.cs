@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace FicheUtilities.DiskStatus.Core
+namespace FicheUtilities.Storage
 {
     public interface IStatusChecker
     {

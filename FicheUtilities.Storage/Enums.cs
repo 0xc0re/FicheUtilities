@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FicheUtilities.DiskStatus.Core
+namespace FicheUtilities.Storage
 {
-    public interface IStatusCheckerFactory
+    public enum MessageType
     {
-        IStatusChecker Create();
+        Info,
+        Ok,
+        Warning,
+        Critical
     }
 }

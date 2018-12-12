@@ -5,7 +5,6 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using FicheUtilities.DiskStatus.Core;
 using McMaster.Extensions.CommandLineUtils;
 
 namespace FicheUtilities.CLI

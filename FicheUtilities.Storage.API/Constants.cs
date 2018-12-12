@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FicheUtilities.DiskStatus.Core
+namespace FicheUtilities.Storage.API
 {
     public static class Constants
     {
