@@ -20,7 +20,7 @@ steps:
 
 - task: VSBuild@1
   inputs:
-    solution: '$(solution)'
+    solution: '$(Build.SourcesDirectory)'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
@@ -28,7 +28,7 @@ steps:
   inputs:
     sourceFolder: '$(solution)'
     contents: 'releasenotes.md' 
-    targetFolder: '$(Build.ArtifactStagingDirectory)/*'
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
     overWrite: true
 
 - task: VSTest@2
