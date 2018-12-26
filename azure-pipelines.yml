@@ -20,15 +20,15 @@ steps:
 
 - task: VSBuild@1
   inputs:
-    solution: '$(Build.SourcesDirectory)'
+    solution: '$(solution)'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
 - task: CopyFiles@2
   inputs:
-    sourceFolder: '$(solution)'
+    sourceFolder: '$(Build.SourcesDirectory)'
     contents: 'releasenotes.md' 
-    targetFolder: '$(Build.ArtifactStagingDirectory)'
+    targetFolder: '$(Build.ArtifactStagingDirectory)/*'
     overWrite: true
 
 - task: VSTest@2
