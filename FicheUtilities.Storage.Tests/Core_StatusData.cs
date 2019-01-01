@@ -1,5 +1,4 @@
-﻿using System;
-using FicheUtilities.Storage.API;
+﻿using FicheUtilities.Storage.API;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace FicheUtilities.DiskStatus.Tests

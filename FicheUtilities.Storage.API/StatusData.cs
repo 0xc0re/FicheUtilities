@@ -4,8 +4,8 @@ namespace FicheUtilities.Storage.API
 {
     public class StatusData : IStatusData
     {
-        private ulong AvailableBytes;
-        private ulong Total;
+        private readonly ulong AvailableBytes;
+        private readonly ulong Total;
         public double AvailableGigabytes => ConvertToGigabytes(AvailableBytes);
         public double UsedGigabytes => ConvertToGigabytes(CalculateUsed());
         public double TotalGigabytes => ConvertToGigabytes(Total);

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace FicheUtilities.Storage.API
+﻿namespace FicheUtilities.Storage.API
 {
     public static class Constants
     {
