@@ -33,3 +33,9 @@ steps:
   inputs:
     pathtoPublish: '$(Build.SourcesDirectory)\FicheUtilities.CLI\bin\Release'
     artifactName: drop
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: 'releasenotes.md' 
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
