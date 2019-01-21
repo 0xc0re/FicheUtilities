@@ -24,13 +24,6 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: CopyFiles@2
-  inputs:
-    sourceFolder: '$(Build.SourcesDirectory)'
-    contents: 'releasenotes.md' 
-    targetFolder: '$(Build.ArtifactStagingDirectory)'
-    overWrite: true
-
 - task: VSTest@2
   inputs:
     platform: '$(buildPlatform)'
@@ -40,3 +33,10 @@ steps:
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: drop
+
+- task: CopyFiles@2
+  inputs:
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: 'releasenotes.md' 
+    targetFolder: '$(Build.ArtifactStagingDirectory)'
+    overWrite: true
