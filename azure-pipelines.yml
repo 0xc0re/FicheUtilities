@@ -31,5 +31,5 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    pathtoPublish: '$(Build.SourcesDirectory)\FicheUtilities\FicheUtilities.CLI\bin\Release'
     artifactName: drop
