@@ -35,6 +35,7 @@ steps:
     contents: 'releasenotes.md' 
     targetFolder: '$(Build.ArtifactStagingDirectory)' 
     overWrite: true
+    cleanTargetFolder: true
 
 - task: CopyFiles@2
   inputs:
@@ -42,6 +43,7 @@ steps:
     contents: 'FicheUtilities.CLI\bin\$(BuildConfiguration)\*' 
     targetFolder: '$(Build.ArtifactStagingDirectory)' 
     overWrite: true
+    flattenFolders: true
 
 - task: PublishBuildArtifacts@1
   inputs:
