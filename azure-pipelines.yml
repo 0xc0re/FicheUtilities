@@ -39,7 +39,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     sourceFolder: '$(Build.SourcesDirectory)'
-    contents: 'FicheUtilities.CLI\bin\$(BuildConfiguration)\**' 
+    contents: 'FicheUtilities.CLI\bin\$(BuildConfiguration)\*' 
     targetFolder: '$(Build.ArtifactStagingDirectory)' 
     overWrite: true
 
