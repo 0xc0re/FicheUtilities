@@ -29,14 +29,7 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: CopyFiles@2
-  inputs:
-    sourceFolder: '$(Build.SourcesDirectory)'
-    contents: 'releasenotes.md' 
-    targetFolder: '$(Build.SourcesDirectory)\FicheUtilities.CLI\bin\Release'
-    overWrite: true
-
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.SourcesDirectory)\FicheUtilities.CLI\bin\Release'
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: drop
